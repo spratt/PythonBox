@@ -17,7 +17,7 @@ def inner(line,count):
 
 # print a line of * of width BOX_SIZE
 def starLine():
-    return '*'*BOX_SIZE + '\n'
+    return ('*'*BOX_SIZE) + '\n'
 
 # print a *, then a line of spaces of width BOX_SIZE-2, then another *
 def spaceLine():
@@ -25,7 +25,7 @@ def spaceLine():
 
 # print a *, a space, a line of X's of width BOX_SIZE-4, a space, then a *
 def xLine():
-    return '* ' + 'X'*(BOX_SIZE-4) + ' *\n'
+    return '* ' + ('X'*(BOX_SIZE-4)) + ' *\n'
 
 # print the boxes
 print starLine() + spaceLine() + xLine() + inner(BOX_SIZE-8,0) + xLine() + spaceLine() + starLine()
