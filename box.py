@@ -1,4 +1,6 @@
 #!/usr/bin/python
+# Note: first command line argument is the length of one side of the box
+#       if no argument is passed it defaults to 15
 import sys
 BOX_SIZE=15 if (len(sys.argv) < 2) else int(sys.argv[1])
 
